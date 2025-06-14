@@ -7,21 +7,27 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Nepal School</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              Unique English Secondary School
+            </h3>
             <p className="text-sm text-gray-200 mb-4">
               Providing quality education and shaping the future of Nepal since
-              2005.
+              2061.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-gray-300">
+              <Link
+                href="https://www.facebook.com/uniqueschool2061"
+                target="_blank"
+                className="hover:text-gray-300"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="https://www.facebook.com/uniqueschool2061" className="hover:text-gray-300">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="mailto:uniqueebs@gmail.com" className="hover:text-gray-300">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -62,22 +68,22 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 shrink-0" />
-                <span>Kathmandu, Nepal</span>
+                <span>Mechinagar-12, Jhapa, Nepal</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 shrink-0" />
-                <span>+977 1234567890</span>
+                <span>023460598</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 shrink-0" />
-                <span>info@nepalschool.edu.np</span>
+                <span>uniqueebs@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-600 mt-8 pt-8 text-sm text-center text-gray-300">
           <p>
-            &copy; {new Date().getFullYear()} Nepal School. All rights reserved.
+            &copy; {new Date().getFullYear()} Unique English Secondary School. All rights reserved.
           </p>
         </div>
       </div>
