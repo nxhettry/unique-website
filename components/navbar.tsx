@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,10 +20,10 @@ export default function Navbar() {
         <Link href="/" className="flex items-center group">
           <div className="flex items-center space-x-2">
             <div className="p-2 rounded-full gradient-primary group-hover:animate-pulse-glow transition-all duration-300">
-              <Sparkles className="h-5 w-5 text-white" />
+              <Image src="/logo.jpg" alt="Logo" width={24} height={24} className="h-10 w-10 rounded-full" />
             </div>
             <div className="text-xl font-bold text-gradient group-hover:scale-105 transition-transform duration-300">
-              Nepal School
+              Unique English Secondary School
             </div>
           </div>
         </Link>

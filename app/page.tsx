@@ -61,7 +61,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 glass text-sm font-medium">
                   <Star className="w-4 h-4 mr-2 text-yellow-300" />
-                  Excellence in Education Since 2005
+                  Excellence in Education Since 2061
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                   Shaping the
@@ -104,21 +104,21 @@ export default function Home() {
                   className="text-center animate-bounce-in"
                   style={{ animationDelay: "0.2s" }}
                 >
-                  <div className="text-3xl font-bold text-yellow-300">500+</div>
+                  <div className="text-3xl font-bold text-yellow-300">300+</div>
                   <div className="text-sm text-gray-300">Happy Students</div>
                 </div>
                 <div
                   className="text-center animate-bounce-in"
                   style={{ animationDelay: "0.4s" }}
                 >
-                  <div className="text-3xl font-bold text-green-300">50+</div>
+                  <div className="text-3xl font-bold text-green-300">15+</div>
                   <div className="text-sm text-gray-300">Expert Teachers</div>
                 </div>
                 <div
                   className="text-center animate-bounce-in"
                   style={{ animationDelay: "0.6s" }}
                 >
-                  <div className="text-3xl font-bold text-blue-300">18+</div>
+                  <div className="text-3xl font-bold text-blue-300">20+</div>
                   <div className="text-sm text-gray-300">Years Excellence</div>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Home() {
               Excellence in Every Aspect
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our school offers a unique learning environment focused on
+              Unique offers a unique learning environment focused on
               academic excellence, personal growth, and character development.
             </p>
           </div>
@@ -251,18 +251,21 @@ export default function Home() {
                 desc: "Students showcase their athletic abilities in various sports competitions and team activities.",
                 date: "June 15, 2024",
                 color: "from-blue-500 to-cyan-500",
+                src: "/sports.jpg"
               },
               {
-                title: "Science Exhibition",
-                desc: "Innovative projects and experiments displayed by students from all grades.",
+                title: "Refreshment Visit",
+                desc: "A day of fun and relaxation for students with games, zoo visit, and refreshments.",
                 date: "June 20, 2024",
                 color: "from-green-500 to-emerald-500",
+                src: "/tour.jpg"
               },
               {
                 title: "Cultural Program",
                 desc: "Celebrating the rich cultural heritage of Nepal through performances and art.",
                 date: "June 25, 2024",
                 color: "from-purple-500 to-pink-500",
+                src: "/cultural.jpg"
               },
             ].map((event, index) => (
               <div
@@ -275,9 +278,7 @@ export default function Home() {
                     className={`absolute inset-0 bg-gradient-to-r ${event.color} opacity-90`}
                   ></div>
                   <Image
-                    src={`/placeholder.svg?height=200&width=400&text=Event ${
-                      index + 1
-                    }`}
+                    src={event.src || `/placeholder.svg?height=200&width=400&text=Event ${index + 1}`}
                     alt={event.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
