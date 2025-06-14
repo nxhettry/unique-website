@@ -1,6 +1,27 @@
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
+export const metadata = {
+  title: "About Us - Unique English Secondary School",
+  description:
+    "Learn about Unique English Secondary School, our mission, vision, values, and the dedicated team behind our success.",
+  openGraph: {
+    title: "About Us - Unique English Secondary School",
+    description:
+      "Learn about Unique English Secondary School, our mission, vision, values, and the dedicated team behind our success.",
+    url: "https://uniqueebs.edu.np/about",
+    siteName: "Unique English Secondary School",
+    images: [
+      {
+        url: "https://uniqueebs.edu.np/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Unique English Secondary School",
+      },
+    ],
+  },
+};
+
 export default function AboutPage() {
   return (
     <>
@@ -9,11 +30,11 @@ export default function AboutPage() {
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              About Our School
+              About Unique
             </h1>
             <p className="text-lg text-gray-200">
               Learn about our history, mission, values, and the dedicated team
-              behind Nepal School.
+              behind Unique English Secondary School.
             </p>
           </div>
         </div>
@@ -29,11 +50,11 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2005, Nepal School began with a vision to provide
-                  quality education to children in our community. What started
-                  as a small institution with just 50 students has now grown
-                  into a respected educational establishment serving over 500
-                  students.
+                  Founded in 2061, Unique English Secondary School began with a
+                  vision to provide quality education to children in our
+                  community. What started as a small institution with just 20
+                  students has now grown into a respected educational
+                  establishment serving over 300 students.
                 </p>
                 <p>
                   Our journey has been marked by a commitment to academic
@@ -50,10 +71,10 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=School History"
+                src="/story.jpg"
                 alt="School history"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>
