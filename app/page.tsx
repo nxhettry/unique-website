@@ -378,7 +378,9 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-muted-foreground leading-relaxed italic">
-                  {'"'}{testimonial.text}{'"'}
+                  {'"'}
+                  {testimonial.text}
+                  {'"'}
                 </p>
               </div>
             ))}
@@ -414,9 +416,9 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-              We{"'"}re currently accepting applications for the upcoming academic
-              year. Contact us to learn more about our admission process and
-              become part of our family.
+              We{"'"}re currently accepting applications for the upcoming
+              academic year. Contact us to learn more about our admission
+              process and become part of our family.
             </p>
             <Button
               asChild
